@@ -21,7 +21,9 @@ jobs:
           rsync -av --delete --chown=568:568 ./ "$TARGET/"
           echo "Site deployed to $TARGET"
 
-      - name: Serve site (built-in Python)
+      - name: Serve site on host port 8170
         run: |
-          python3 -m http.server 8170 --directory /mnt/pool/www/vses &
-          echo "🚀  Site now live at http://$(hostname -I | awk '{print $1}'):8170"
+          # find the first non-loopback IP of the host
+          HOST_IP=$(ip route get 1 | awk '{print $7;exit}')
+          python3 -m http.server 8170 --bind 0.0.0.0 --directory /mnt/pool/www/vses &
+          echo "🚀  Site now live at http://$HOST_IP:8170"
