@@ -23,7 +23,5 @@ jobs:
 
       - name: Serve site on host port 8170
         run: |
-          # find the first non-loopback IP of the host
-          HOST_IP=$(ip route get 1 | awk '{print $7;exit}')
           python3 -m http.server 8170 --bind 0.0.0.0 --directory /mnt/pool/www/vses &
-          echo "🚀  Site now live at http://$HOST_IP:8170"
+          echo "🚀  Site now live at http://192.168.1.12:8170"   # <— your TrueNAS LAN IP
