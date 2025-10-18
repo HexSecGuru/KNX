@@ -6,13 +6,13 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
 
       - name: Push to web root
         run: |
           TARGET="/mnt/pool/www/vses"
-          sudo mkdir -p "$TARGET"
-          sudo rsync -av --delete --chown=www-data:www-data ./ "$TARGET/"
+          mkdir -p "$TARGET"
+          rsync -av --delete --chown=568:568 ./ "$TARGET/"
           echo "Site deployed to $TARGET"
