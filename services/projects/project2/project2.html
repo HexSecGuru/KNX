@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSES - Before & After</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+
+<body>
+<header id="mainHeader">
+        <div class="brand">
+            <div class="logo">
+                <img src="/logo/VSES_logo.png" alt="VSES Logo">
+            </div>
+            <h1>VSES</h1>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+
+        <nav id="mainNav">
+            <a href="/home/main.html">Home</a>
+            <a href="/services/services.html">Services</a>
+            <a href="/contact/contact.html">Contact</a>
+            <a href="/about/about.html">About Us</a>
+        </nav>
+    </header>
+
+    <h1>Two Brothers Creparrie & Coffee Renovation</h1>
+
+    <main>
+        <!-- Project Overview -->
+        <section class="project-overview">
+            <p>Complete electrical and structural renovation of the "Two Brothers" creparrie. We transformed this severely damaged space into a modern, fully functional restaurant with state-of-the-art electrical systems, lighting, and commercial kitchen equipment.</p>
+        </section>
+
+        <!-- Project Stats -->
+        <section class="project-stats">
+            <div class="stat-item">
+                <div class="stat-number">21</div>
+                <div class="stat-label">Days Completion</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Safety Compliance</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">45+</div>
+                <div class="stat-label">Components Installed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5.0★</div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+        </section>
+
+        <!-- Featured Before/After Slider -->
+        <section class="featured-section">
+            <h2>Complete Transformation</h2>
+            <div class="container">
+                <div class="image-container">
+                    <img class="image-before" src="/services/projects/images/Zografoy/after/image1.jpg"
+                        alt="Destroyed creparrie before renovation" />
+                    <img class="image-after" id="afterImage" src="/services/projects/images/Zografoy/before/image2.jpg"
+                        alt="Modern creparrie after renovation" />
+                </div>
+                <input type="range" min="0" max="100" value="50" class="slider" id="slider">
+                <div class="slider-button" id="sliderButton"></div>
+            </div>
+
+            <div class="labels">
+                <span class="label before">DESTROYED</span>
+                <span class="label after">RENOVATED</span>
+            </div>
+        </section>
+
+        <!-- Before Gallery -->
+        <section class="gallery-section">
+            <h2>Before - Destroyed Condition</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-index="0">
+                    <img src="/services/projects/images/Zografoy/before/image1.jpg" alt="Destroyed electrical panel">
+                    <div class="gallery-caption">Destroyed Electrical Panel</div>
+                </div>
+                <div class="gallery-item" data-index="1">
+                    <img src="/services/projects/images/Zografoy/before/image2.jpg" alt="Damaged wiring system">
+                    <div class="gallery-caption">Damaged Wiring System</div>
+                </div>
+                <div class="gallery-item" data-index="2">
+                    <img src="/services/projects/images/Zografoy/before/image3.jpg" alt="Ruined lighting fixtures">
+                    <div class="gallery-caption">Ruined Lighting Fixtures</div>
+                </div>
+                <div class="gallery-item" data-index="3">
+                    <img src="/services/projects/images/Zografoy/before/image4.jpg" alt="Destroyed kitchen area">
+                    <div class="gallery-caption">Destroyed Kitchen Area</div>
+                </div>
+                <div class="gallery-item" data-index="4">
+                    <img src="/services/projects/images/Zografoy/before/image5.jpg" alt="Damaged outlet setup">
+                    <div class="gallery-caption">Damaged Outlet Setup</div>
+                </div>
+                <div class="gallery-item" data-index="5">
+                    <img src="/services/projects/images/Zografoy/before/image6.jpg" alt="Structural damage">
+                    <div class="gallery-caption">Structural Damage</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- After Gallery -->
+        <section class="gallery-section">
+            <h2>After - Modern Renovation</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-index="6">
+                    <img src="/services/projects/images/Zografoy/after/image1.jpg" alt="Modern electrical installation">
+                    <div class="gallery-caption">Modern Electrical Installation</div>
+                </div>
+                <div class="gallery-item" data-index="7">
+                    <img src="/services/projects/images/Zografoy/after/image2.jpg" alt="New commercial kitchen">
+                    <div class="gallery-caption">New Commercial Kitchen</div>
+                </div>
+                <div class="gallery-item" data-index="8">
+                    <img src="/services/projects/images/Zografoy/after/image3.jpg" alt="Professional lighting">
+                    <div class="gallery-caption">Professional Lighting System</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Description -->
+        <section class="project-overview">
+            <h2>Work Performed</h2>
+            <p>Complete electrical overhaul including: new main distribution panel, commercial kitchen wiring, LED lighting system installation, safety switch installation, outlet and switch replacement, emergency lighting system,Rack installation,,Alarm system, ventilation system wiring and smart restaurant technology integration.</p>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">×</button>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev">‹</button>
+            <img src="" alt="Enlarged view" id="lightbox-img">
+            <button class="lightbox-nav lightbox-next" id="lightbox-next">›</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>📞 +30 6974749156 | ✉️ vses_vulo@outlook.com</p>
+        <p>© 2025 VSES Electrician Services</p>
+        <div class="socials">
+            <a href="#" aria-label="Facebook"><img src="/logo/logo_socal/facebook.png" alt="Facebook"></a>
+            <a href="#" aria-label="Instagram"><img src="/logo/logo_socal/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    
+    <script src="project2.js"></script>
+</body>
+
+</html>

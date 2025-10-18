@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>VSES - Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="mainHeader">
+        <div class="brand">
+            <div class="logo">
+                <img src="/logo/VSES_logo.png" alt="VSES Logo">
+            </div>
+            <h1>VSES</h1>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+
+        <nav id="mainNav">
+            <a href="/home/main.html" data-lang="en" class="active">Home</a>
+            <a href="/home/main.html" data-lang="el">Αρχική</a>
+            
+            <a href="/services/services.html" data-lang="en" class="active">Services</a>
+            <a href="/services/services.html" data-lang="el">Υπηρεσίες</a>
+            
+            <a href="/contact/contact.html" class="active" data-lang="en">Contact</a>
+            <a href="/contact/contact.html" class="active" data-lang="el">Επικοινωνία</a>
+            
+            <a href="/about/about.html" data-lang="en" class="active">About Us</a>
+            <a href="/about/about.html" data-lang="el">Σχετικά</a>
+        </nav>
+
+        <div class="language-switcher">
+            <button class="lang-toggle" id="langToggle">
+                <span class="flag" id="currentFlag">🇬🇧</span>
+                <span id="currentLang">EN</span>
+                <span class="arrow">▼</span>
+            </button>
+            <div class="lang-dropdown">
+                <div class="lang-option active" data-lang-opt="en">
+                    <span class="flag">🇬🇧</span>
+                    <span class="lang-name">English</span>
+                    <span class="checkmark">✓</span>
+                </div>
+                <div class="lang-option" data-lang-opt="el">
+                    <span class="flag">🇬🇷</span>
+                    <span class="lang-name">Ελληνικά</span>
+                    <span class="checkmark">✓</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 data-lang="en" class="active">Get In Touch With Us</h1>
+            <h1 data-lang="el">Επικοινωνήστε Μαζί Μας</h1>
+            
+            <p data-lang="en" class="active">Professional electrical services you can trust. We're here to answer your questions and provide expert solutions for all your electrical needs.</p>
+            <p data-lang="el">Επαγγελματικές ηλεκτρολογικές υπηρεσίες που μπορείτε να εμπιστευτείτε. Είμαστε εδώ για να απαντήσουμε στις ερωτήσεις σας και να παρέχουμε εξειδικευμένες λύσεις για όλες τις ηλεκτρολογικές σας ανάγκες.</p>
+            
+            <div class="hero-cta">
+                <a href="tel:+306974749156" class="cta-button cta-primary">
+                    <i class="fas fa-phone"></i> <span data-lang="en" class="active">Call Now</span><span data-lang="el">Καλέστε Τώρα</span>
+                </a>
+                <a href="#contact-form" class="cta-button cta-secondary">
+                    <i class="fas fa-envelope"></i> <span data-lang="en" class="active">Send Message</span><span data-lang="el">Στείλτε Μήνυμα</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Stats Section -->
+        <div class="contact-stats">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-bolt"></i></div>
+                <div class="stat-number">24/7</div>
+                <div class="stat-label" data-lang="en" class="active">Emergency Service</div>
+                <div class="stat-label" data-lang="el">Υπηρεσία Έκτακτης Ανάγκης</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                <div class="stat-number">&lt;2h</div>
+                <div class="stat-label" data-lang="en" class="active">Response Time</div>
+                <div class="stat-label" data-lang="el">Χρόνος Ανταπόκρισης</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-star"></i></div>
+                <div class="stat-number">500+</div>
+                <div class="stat-label" data-lang="en" class="active">Happy Clients</div>
+                <div class="stat-label" data-lang="el">Ικανοποιημένοι Πελάτες</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-award"></i></div>
+                <div class="stat-number">15+</div>
+                <div class="stat-label" data-lang="en" class="active">Years Experience</div>
+                <div class="stat-label" data-lang="el">Χρόνια Εμπειρίας</div>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="contact-intro">
+                    <h2 data-lang="en" class="active">Contact Information</h2>
+                    <h2 data-lang="el">Στοιχεία Επικοινωνίας</h2>
+                    
+                    <p data-lang="en" class="active">Have a question or need electrical services? We're here to help! Reach out through any of the following methods and our team will respond promptly.</p>
+                    <p data-lang="el">Έχετε κάποια ερώτηση ή χρειάζεστε ηλεκτρολογικές υπηρεσίες; Είμαστε εδώ για να βοηθήσουμε! Επικοινωνήστε μαζί μας με οποιονδήποτε από τους παρακάτω τρόπους και η ομάδα μας θα ανταποκριθεί άμεσα.</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <div class="contact-details">
+                        <h3 data-lang="en" class="active">Phone</h3>
+                        <h3 data-lang="el">Τηλέφωνο</h3>
+                        <p><a href="tel:+306974749156">+30 6974749156</a></p>
+                        <p data-lang="en" class="active">Available 24/7 for emergencies</p>
+                        <p data-lang="el">Διαθέσιμο 24/7 για επείγοντα</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p><a href="mailto:vses_vulo@outlook.com">vses_vulo@outlook.com</a></p>
+                        <p data-lang="en" class="active">We'll respond within 24 hours</p>
+                        <p data-lang="el">Θα απαντήσουμε εντός 24 ωρών</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-details">
+                        <h3 data-lang="en" class="active">Location</h3>
+                        <h3 data-lang="el">Τοποθεσία</h3>
+                        <p>Panselinou 21-13</p>
+                        <p data-lang="en" class="active">Greece</p>
+                        <p data-lang="el">Ελλάδα</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <div class="contact-details">
+                        <h3 data-lang="en" class="active">Emergency Service</h3>
+                        <h3 data-lang="el">Υπηρεσία Έκτακτης Ανάγκης</h3>
+                        <p style="color: #f9c21a; font-weight: 700; font-size: 18px;" data-lang="en" class="active">Call Anytime!</p>
+                        <p style="color: #f9c21a; font-weight: 700; font-size: 18px;" data-lang="el">Καλέστε Οποιαδήποτε Στιγμή!</p>
+                        <p data-lang="en" class="active">Immediate response for urgent electrical issues</p>
+                        <p data-lang="el">Άμεση ανταπόκριση για επείγοντα ηλεκτρολογικά προβλήματα</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form" id="contact-form">
+                <h2 data-lang="en" class="active">Send Us a Message</h2>
+                <h2 data-lang="el">Στείλτε μας Μήνυμα</h2>
+                
+                <p style="margin-bottom: 30px; color: #b0b0b0;" data-lang="en" class="active">Fill out the form below and we'll get back to you as soon as possible.</p>
+                <p style="margin-bottom: 30px; color: #b0b0b0;" data-lang="el">Συμπληρώστε την παρακάτω φόρμα και θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατόν.</p>
+
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" data-lang="en" class="active">Full Name *</label>
+                            <label for="name" data-lang="el">Πλήρες Όνομα *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-lang="en" class="active">Email Address *</label>
+                            <label for="email" data-lang="el">Διεύθυνση Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone" data-lang="en" class="active">Phone Number</label>
+                            <label for="phone" data-lang="el">Αριθμός Τηλεφώνου</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+30 123 456 7890">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service" data-lang="en" class="active">Service Type *</label>
+                            <label for="service" data-lang="el">Τύπος Υπηρεσίας *</label>
+                            <select id="service" name="service" required>
+                                <option value="" data-lang="en" class="active">Select a service</option>
+                                <option value="" data-lang="el">Επιλέξτε υπηρεσία</option>
+                                <option value="installation" data-lang="en" class="active">Electrical Installation</option>
+                                <option value="installation" data-lang="el">Ηλεκτρολογική Εγκατάσταση</option>
+                                <option value="repair" data-lang="en" class="active">Repair Service</option>
+                                <option value="repair" data-lang="el">Υπηρεσία Επισκευής</option>
+                                <option value="maintenance" data-lang="en" class="active">Maintenance</option>
+                                <option value="maintenance" data-lang="el">Συντήρηση</option>
+                                <option value="emergency" data-lang="en" class="active">Emergency Service</option>
+                                <option value="emergency" data-lang="el">Υπηρεσία Έκτακτης Ανάγκης</option>
+                                <option value="consultation" data-lang="en" class="active">Consultation</option>
+                                <option value="consultation" data-lang="el">Συμβουλευτική</option>
+                                <option value="other" data-lang="en" class="active">Other</option>
+                                <option value="other" data-lang="el">Άλλο</option>
+                            </select>
+                            <span class="error-message" id="serviceError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" data-lang="en" class="active">Subject *</label>
+                        <label for="subject" data-lang="el">Θέμα *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="">
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-lang="en" class="active">Message *</label>
+                        <label for="message" data-lang="el">Μήνυμα *</label>
+                        <textarea id="message" name="message" required placeholder=""></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text" data-lang="en" class="active">Send Message</span>
+                        <span class="btn-text" data-lang="el">Αποστολή Μηνύματος</span>
+                        <span class="btn-loading">
+                            <span class="spinner"></span> <span data-lang="en" class="active">Sending...</span><span data-lang="el">Αποστολή...</span>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="business-hours">
+            <h2 data-lang="en" class="active">Business Hours</h2>
+            <h2 data-lang="el">Ωράριο Λειτουργίας</h2>
+            
+            <div class="hours-grid">
+                <div class="hours-item">
+                    <span class="day" data-lang="en" class="active">Monday</span>
+                    <span class="day" data-lang="el">Δευτέρα</span>
+                    <span class="time">8:00 AM - 6:00 PM</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day" data-lang="en" class="active">Tuesday</span>
+                    <span class="day" data-lang="el">Τρίτη</span>
+                    <span class="time">8:00 AM - 6:00 PM</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day" data-lang="en" class="active">Wednesday</span>
+                    <span class="day" data-lang="el">Τετάρτη</span>
+                    <span class="time">8:00 AM - 6:00 PM</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day" data-lang="en" class="active">Thursday</span>
+                    <span class="day" data-lang="el">Πέμπτη</span>
+                    <span class="time">8:00 AM - 6:00 PM</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day" data-lang="en" class="active">Friday</span>
+                    <span class="day" data-lang="el">Παρασκευή</span>
+                    <span class="time">8:00 AM - 6:00 PM</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day" data-lang="en" class="active">Saturday</span>
+                    <span class="day" data-lang="el">Σάββατο</span>
+                    <span class="time">9:00 AM - 3:00 PM</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day" data-lang="en" class="active">Sunday</span>
+                    <span class="day" data-lang="el">Κυριακή</span>
+                    <span class="time" data-lang="en" class="active">Emergency Only</span>
+                    <span class="time" data-lang="el">Μόνο Επείγοντα</span>
+                </div>
+            </div>
+            <div class="emergency-note">
+                <p data-lang="en" class="active"><i class="fas fa-bolt"></i> 24/7 Emergency Services Available - Call Anytime! <i class="fas fa-bolt"></i></p>
+                <p data-lang="el"><i class="fas fa-bolt"></i> Υπηρεσίες Έκτακτης Ανάγκης 24/7 - Καλέστε Οποιαδήποτε Στιγμή! <i class="fas fa-bolt"></i></p>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-section">
+            <div class="map-header">
+                <h2 data-lang="en" class="active">Find Us</h2>
+                <h2 data-lang="el">Βρείτε Μας</h2>
+                <p data-lang="en" class="active">Visit our location or we can come to you</p>
+                <p data-lang="el">Επισκεφθείτε την τοποθεσία μας ή μπορούμε να έρθουμε σε εσάς</p>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.8628159283285!2d23.73951177642131!3d38.014314098324746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a294f481a9f7%3A0x7d5ce3efb40adf89!2sPanselinou%2021-13%2C%20Athina%20111%2041!5e1!3m2!1sen!2sgr!4v1759948620042!5m2!1sen!2sgr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><i class="fas fa-phone"></i> +30 6974749156 | <i class="fas fa-envelope"></i> vses_vulo@outlook.com</p>
+        <p data-lang="en" class="active">© 2025 VSES Electrician Services. All rights reserved.</p>
+        <p data-lang="el">© 2025 VSES Ηλεκτρολογικές Υπηρεσίες. Όλα τα δικαιώματα κατοχυρωμένα.</p>
+        <div class="socials">
+            <a href="#" aria-label="Facebook"><img src="/logo/logo_socal/facebook.png" alt="Facebook"></a>
+            <a href="#" aria-label="Instagram"><img src="/logo/logo_socal/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+        <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h3 data-lang="en" class="active">Thank You!</h3>
+        <h3 data-lang="el">Ευχαριστούμε!</h3>
+        <p data-lang="en" class="active">We've received your message and will contact you as soon as possible.</p>
+        <p data-lang="el">Λάβαμε το μήνυμά σας και θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατόν.</p>
+
+        <div class="suggestion-box">
+            <p data-lang="en" class="active">While you wait, why not learn more about our company?</p>
+            <p data-lang="el">Ενώ περιμένετε, γιατί να μην μάθετε περισσότερα για την εταιρεία μας;</p>
+            <a href="/about/about.html" class="learn-more-btn" data-lang="en" class="active">Learn About Us</a>
+            <a href="/about/about.html" class="learn-more-btn" data-lang="el">Μάθετε για Εμάς</a>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>

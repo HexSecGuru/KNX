@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSES</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo">
+                <img src="/logo/VSES_logo.png" alt="VSES Logo">
+            </div>
+            <h1>VSES</h1>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+        <nav>
+            <a href="/home/main.html" data-lang="en" class="active">Home</a>
+            <a href="/home/main.html" data-lang="el">Αρχική</a>
+            
+            <a href="/services/services.html" data-lang="en" class="active">Services</a>
+            <a href="/services/services.html" data-lang="el">Υπηρεσίες</a>
+            
+            <a href="/contact/contact.html" data-lang="en" class="active">Contact</a>
+            <a href="/contact/contact.html" data-lang="el">Επικοινωνία</a>
+            
+            <a href="/about/about.html" data-lang="en" class="active">About Us</a>
+            <a href="/about/about.html" data-lang="el">Σχετικά</a>
+        </nav>
+        
+        <div class="language-switcher">
+            <button class="lang-toggle" id="langToggle">
+                <span class="flag" id="currentFlag">🇬🇧</span>
+                <span id="currentLang">EN</span>
+                <span class="arrow">▼</span>
+            </button>
+            <div class="lang-dropdown">
+                <div class="lang-option active" data-lang-opt="en">
+                    <span class="flag">🇬🇧</span>
+                    <span class="lang-name">English</span>
+                    <span class="checkmark">✓</span>
+                </div>
+                <div class="lang-option" data-lang-opt="el">
+                    <span class="flag">🇬🇷</span>
+                    <span class="lang-name">Ελληνικά</span>
+                    <span class="checkmark">✓</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2 data-lang="en" class="active">Smart Electrical Solutions</h2>
+        <h2 data-lang="el">Έξυπνες Ηλεκτρολογικές Λύσεις</h2>
+        
+        <a href="/contact/contact.html" class="btn" data-lang="en" class="active">Get a Free Quote</a>
+        <a href="/contact/contact.html" class="btn" data-lang="el">Λάβετε Δωρεάν Προσφορά</a>
+    </section>
+
+    <section class="services">
+        <div class="service">
+            <img src="images/icons/residential (1).png" alt="Residential Services">
+            <h3 data-lang="en" class="active">Residential</h3>
+            <h3 data-lang="el">Οικιακά</h3>
+            <p data-lang="en" class="active">Electrical systems for homes</p>
+            <p data-lang="el">Ηλεκτρολογικά συστήματα για σπίτια</p>
+        </div>
+        
+        <div class="service">
+            <img src="images/icons/communication (1).png" alt="Commercial Services">
+            <h3 data-lang="en" class="active">Commercial</h3>
+            <h3 data-lang="el">Εμπορικά</h3>
+            <p data-lang="en" class="active">Electrical solutions for businesses</p>
+            <p data-lang="el">Ηλεκτρολογικές λύσεις για επιχειρήσεις</p>
+        </div>
+        
+        <div class="service">
+            <img src="images/icons/electric-factory (1).png" alt="Industrial Services">
+            <h3 data-lang="en" class="active">Industrial</h3>
+            <h3 data-lang="el">Βιομηχανικά</h3>
+            <p data-lang="en" class="active">Factory electrical services</p>
+            <p data-lang="el">Βιομηχανικές ηλεκτρολογικές υπηρεσίες</p>
+        </div>
+        
+        <div class="service">
+            <img src="images/icons/emergency-call.png" alt="Emergency Services">
+            <h3 data-lang="en" class="active">Emergency</h3>
+            <h3 data-lang="el">Επείγον</h3>
+            <p data-lang="en" class="active">24/7 urgent repairs</p>
+            <p data-lang="el">24/7 επείγουσες επισκευές</p>
+        </div>
+    </section>
+
+    <!-- COLLABORATORS SECTION -->
+    <section class="collaborators-section">
+        <h2 class="collaborators-title" data-lang="en" class="active">Our Trusted Partners</h2>
+        <h2 class="collaborators-title" data-lang="el">Οι Αξιόπιστοι Συνεργάτες Μας</h2>
+        
+        <div class="collaborators-container">
+            <div class="collaborators-track">
+                <!-- First set -->
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/KNX.png" alt="KNX">
+                </div>
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/qbus.png" alt="Qbus">
+                </div>
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/KAFKAS.png" alt="Kaykas">
+                </div>
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/dali.png" alt="Dali">
+                </div>
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/electromeletis.png" alt="Electromeletis">
+                </div>
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/biticino.avif" alt="biticino">
+                </div>
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/siemens.png" alt="siemens">
+                </div>
+
+                <!-- Duplicate for seamless loop -->
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/KNX.png" alt="KNX">
+                </div>
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/qbus.png" alt="Qbus">
+                </div>
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/KAFKAS.png" alt="Kaykas">
+                </div>
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/dali.png" alt="Dali">
+                </div>
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/electromeletis.png" alt="Electromeletis">
+                </div>
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/biticino.avif" alt="biticino">
+                </div>
+                <div class="collaborator-logo">
+                    <img src="/logo/Colaborators_logo/siemens.png" alt="siemens">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <img src="/home/images/images1.webp" alt="Professional Lighting Installation">
+        <img src="/home/images/images2.jpg" alt="Electrical Wiring Panel">
+        <img src="/home/images/images3.png" alt="Smart Home System">
+    </section>
+
+    <footer>
+        <p>📞 +30 6974749156 | 📧 vses_vulo@outlook.com</p>
+        <p data-lang="en" class="active">© 2025 VSES Electrician Services</p>
+        <p data-lang="el">© 2025 VSES Ηλεκτρολογικές Υπηρεσίες</p>
+        <div class="socials">
+            <a href="#" aria-label="Facebook"><img src="/logo/logo_socal/facebook.png" alt="Facebook"></a>
+            <a href="#" aria-label="Instagram"><img src="/logo/logo_socal/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
