@@ -10,8 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install rsync
-        run: apt-get update && apt-get install -y rsync
+      - name: Install rsync & python3
+        run: |
+          apt-get update && apt-get install -y rsync python3
 
       - name: Push to web root
         run: |
@@ -19,3 +20,8 @@ jobs:
           mkdir -p "$TARGET"
           rsync -av --delete --chown=568:568 ./ "$TARGET/"
           echo "Site deployed to $TARGET"
+
+      - name: Serve site (built-in Python)
+        run: |
+          python3 -m http.server 8170 --directory /mnt/pool/www/vses &
+          echo "🚀  Site now live at http://$(hostname -I | awk '{print $1}'):8170"
